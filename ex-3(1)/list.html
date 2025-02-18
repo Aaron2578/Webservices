@@ -1,0 +1,121 @@
+<html >
+<head>
+
+
+<title>Lists Example</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+			background-color: 00000;
+			color:white;
+        }
+		h1 {
+			color:green;
+			text-align: center;
+		}
+        h2 {
+            color: #4CAF10;
+        }
+		.div {
+			display: flex;
+			justify-content: space-between;
+		}
+		div>h2 {
+			background-color: white;
+			padding: 8px 16px;
+			border-radius: 20px;
+			margin: 20px 5px;
+		}
+		.div>div {
+			background: #000;
+			border: 5px solid white;
+			margin: 20px 10px;
+			border-radius: 20px;
+		}
+		.last-div{
+			display: flex;
+			justify-content: center;
+		}
+		a {
+			
+			color: white;
+			text-decoration: none;
+			border:2px solid white;
+			width: fit-content;
+			padding: 6px 12px;
+			border-radius: 20px;
+		}
+		a:hover {
+            background: white;
+            color: #000;
+			font-weight: 700;
+            transition: 1s;
+        }
+</style>
+</head>
+<body>
+<h1>List Example </h1><hr>
+
+<div class="div">
+	<div>
+		<h2>Course (Unordered)</h2>
+	<ul>
+	<li>B.Sc</li>
+	<li>B.A</li>
+	<li>B.Com</li>
+	<li>M.Sc</li>
+			<li>M.Com</li>
+	</ul>
+	</div>
+
+	<div>
+		<h2>Departments (Ordered)</h2>
+	<ol>
+	<li>B.A Tamil</li>
+			<li>B.A English</li>
+			<li>B.A Economics</li>
+			<li>B.A History</li>
+			<li>B.Sc Maths</li>
+			<li>B.Sc Physics</li>
+			<li>B.Sc Chemistry</li>
+			<li>B.Sc Botany</li>
+			<li>B.Sc Zoology</li>
+			<li>B.Sc Computer Science</li>
+
+	</ol>
+	</div>
+	<div>
+		<h2>Nested List</h2>
+<ul>
+<li>Arts
+<ul>
+<li>Tamil</li>
+<li>English</li>
+<li>History</li>
+				<li>Economics</li>
+</ul>
+</li>
+<li>Commerce
+<ul>
+<li>Commerce (Gen)</li>
+<li>Commerce (Accounting & Finanace)</li>
+<li>BBA</li>
+				<li>Corporate</li>
+</ul>
+</li>
+		<li>Science
+<ul>
+<li>Mathematics </li>
+<li>Physics</li>
+<li>Chemistry</li>
+				<li>Botany</li>
+				<li>Zoology</li>
+</ul>
+</li>
+</ul>
+	</div>
+</div>
+<div class="last-div"><a href="../ex-3(2)/mark.html">Mark Page</a></div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <title>World Countries</title>
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            height: 100px;
+            margin-top: 180px;
+            padding: 20px;
+            background-color:linear-gradient(red,green,30deg);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .container>div {
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: black;
+            margin: 5px 0px;
+            padding: 8px 16px;
+            border-radius: 16px;
+            height: fit-content;
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+        }
+
+        ul {
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        li {
+            list-style-type: none;
+            font-weight: 900;
+        }
+
+        button {
+            padding: 8px 16px;
+            background: none;
+            border-radius: 20px;
+            border: none;
+        }
+
+        .grow:hover {
+            width: 20%;
+            transition: 2s;
+            background: #f80202;
+        }
+        .grow a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Top Countries</h1>
+    <p>
+        Explore information about countries around the world<br>
+    </p>
+
+    <div class='container'>
+        <div class='grow'><button><a href="india.html" target="_blank">India</a></button></div>
+        <div class='grow'><button><a href="china.html" target="_blank">China</a></button></div>
+        <div class='grow'><button><a href="us.html" target="_blank">United States</a></button></div>
+        <div class='grow'><button><a href="japan.html" target="_blank">Japan</a></button></div>
+        <div class='grow'><button><a href="australia.html" target="_blank">Australia</a></button></div>
+    </div>
+</body>
+
+</html>
