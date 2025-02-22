@@ -1,13 +1,20 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Earth_Western_Hemisphere_transparent_background.png/800px-Earth_Western_Hemisphere_transparent_background.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white; /* Ensures text is readable */
-    text-align: center;
+  font-family: Arial, sans-serif;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1920px-World_map_-_low_resolution.svg.png'); /* World Map */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white; /* Ensures text is readable */
+  text-align: center;
 }
+
+.container {
+  background: rgba(0, 0, 0, 0.6); /* Adds a slight dark overlay for better text visibility */
+  padding: 30px;
+  border-radius: 10px;
+}
+
   
   /* Buttons Hover Effect */
   .grow {
