@@ -5,14 +5,20 @@
 }
 /* .body {
   background-color: #F8F9FA;
+ 
   color: #212529;
 } */
 .body {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
               url('./bg1.jpg') no-repeat center center/cover;
-  color: white;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 100px 20px;
+  color: white; /* Ensure text is visible */
+  padding: 20px;
 }
 .container {
   margin: auto;
@@ -29,7 +35,6 @@
 }
 .heading>h1 {
   font-weight: bolder;
-  background: #000;
 }
 .prog-wrapper {
   width: 50%;
@@ -38,15 +43,24 @@
     flex-wrap: wrap;
     gap: 40px;
 }
-@media (max-width: 1080px) {
-  .body {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-              url('./bg1.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  /* padding: -100px 20px;  */
-  overflow: hidden;
+@media (max-width: 768px) {
+  .bg-container {
+    height: 60vh; /* Reduce height on smaller screens */
+    background-size: cover; /* Ensure proper scaling */
+    background-position: center; /* Keep focus on center */
+    padding: 10px;
   }
+}
+
+/* 📱 Small Mobile Screens (less than 480px) */
+@media (max-width: 480px) {
+  .bg-container {
+    height: 50vh; /* Smaller height */
+    background-size: contain; /* Ensure full image is visible */
+    padding: 5px;
+  }
+}
+@media (max-width: 600px) {
   .container {
     width: 100%;
     margin: auto;
