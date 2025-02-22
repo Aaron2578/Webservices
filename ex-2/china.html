@@ -1,100 +1,112 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>China</title>
+
     <style>
         body {
-            font-family: arial, sans-serif;
+            font-family: Arial, sans-serif;
             padding: 20px;
             background-color: #987606;
+            color: white;
+            text-align: center;
         }
 
         h1 {
             color: pink;
-            text-align: center;
         }
 
         .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
+            gap: 10px;
         }
 
         .container>div {
             width: 30%;
-            display: flex;
-            flex-direction: column;
-            color: white;
             background-color: black;
-            margin: 5px 0px;
-            padding: 20px 16px;
+            padding: 20px;
             border-radius: 16px;
-            height: fit-content;
+            text-align: left;
+            line-height: 1.5;
+            transition: transform 0.3s ease-in-out;
         }
 
         .container>div:hover {
             border: 2px solid white;
+            transform: scale(1.05);
         }
 
         b {
             color: red;
         }
 
-        button {
-            padding: 8px 16px;
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
             background-color: green;
-            color: black;
+            color: white;
             border-radius: 20px;
-        }
-
-        a {
-            color: white;
             text-decoration: none;
             font-weight: bold;
         }
 
-        a:hover {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
+        .btn:hover {
+            background-color: darkgreen;
+        }
+
+        /* 📱 Mobile Responsive */
+        @media (max-width: 768px) {
+            .container>div {
+                width: 100%;
+            }
         }
     </style>
 </head>
 
 <body>
     <h1>China</h1>
-    <div class='container' style="text-allign:justify;">
 
+    <div class="container">
         <div><b>Geography</b><br>
-            China is a country in East Asia that borders the EAst China Sea,lorea BAy and the South China Sea. The
-            Country
-            has a diverse landscape, with mountains, deserts, plans,highlandds and basins. The Yangtze and yellow rivers
-            are two of the country's most well-knows rivers.
+            China is a country in East Asia that borders the East China Sea, Korea Bay, and the South China Sea.
+            The country has a diverse landscape, with mountains, deserts, plains, highlands, and basins.
+            The Yangtze and Yellow Rivers are two of the country's most well-known rivers.
         </div>
         <div><b>Government</b><br>
-            China is a communist party-led state with a presidebt as cheif of state and a premier as head of government.
-            The country's constitution was adopted on December 4,1982.
+            China is a communist party-led state with a president as chief of state and a premier as head of government.
+            The country's constitution was adopted on December 4, 1982.
         </div>
         <div><b>History</b><br>
-            China is home to one of the world's oldest civilization, with a culture that stretches back almost 4000
-            years.
-            The country's history is divided into dynasties, with the Qin dynasty beginning in 221 B.C. The last emperor
-            was
-            overthrown in 1912, and china became a republic. The People's Republic of China was established in 1949
-            after the communist party defeated the nationalist Kuomintang.
+            China is home to one of the world's oldest civilizations, with a culture that stretches back almost 4,000 years.
+            The country's history is divided into dynasties, with the Qin Dynasty beginning in 221 B.C.
+            The last emperor was overthrown in 1912, and China became a republic.
+            The People's Republic of China was established in 1949 after the Communist Party defeated the Nationalist Kuomintang.
         </div>
         <div><b>Economy</b><br>
-            China is one of the world's fastest growing economics and a leading exporter. The country's economy is
-            market-based,
-            having changed from a centrally planned system in the 1970s.
+            China is one of the world's fastest-growing economies and a leading exporter.
+            The country's economy is market-based, having changed from a centrally planned system in the 1970s.
         </div>
         <div><b>Inventions</b><br>
-            China is credited with inventing many things, including paper, the magnetic compass, printing, procelain,
-            silk and gunpowder/
+            China is credited with inventing many things, including paper, the magnetic compass, printing, porcelain,
+            silk, and gunpowder.
         </div>
     </div>
-    <button><a href="world.html">Back to world</a></button>
-    <button><a href="us.html">Next</a></button>
+
+    <div class="btn-container">
+        <a href="world.html" class="btn">⬅ Back to World</a>
+        <a href="us.html" class="btn">Next ➡</a>
+    </div>
 </body>
 
 </html>

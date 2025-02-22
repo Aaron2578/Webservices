@@ -1,80 +1,108 @@
-<html>
-<head>
-<title>United States</title>
-<style>
-body {
-font-family:arial,sans-serif;
-background-color:#987606;
-}
-h1 {
-color:pink;
-text-align:center;
-}
-.container{
-display:flex;
-justify-content:space-between;
-flex-wrap:wrap;
-}
-.container>div {
-width:30%;
-display:flex;
-color:white;
-background-color:black;
-margin:5px 0px;
-padding:8px 16px;
-border-radius:16px;
-height:fit-content;
-}
-.container>div:hover {
-border:2px solid white;
-}
-b {
-color:red;
-}
-button {
-padding:8px 16px;
-background-color:green;
-color:black;
-border-radius:20px;
-}
-a {
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-a:hover {
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-</style>
-</head>
-<body>
-<h1>United States</h1>
-<div class="container" style="text-allign:justify;">
-<div><b>Size</b><br>
-United States is the world's sixth largest country by land area and the largest country in oceania. It covers 
-an entire continent and is made up of mainland United States, Tasmania and serveral smaller islands.
-</div>
-<div><b>Natural Wonders</b><br>
+<!DOCTYPE html>
+<html lang="en">
 
-United States is know for its natural wonders including beaches, deserts, "The Bush",and "The Outback".
-Fraser island is the world's largest sand island.
-</div>
-<div><b>Culture</b><br>
-United States is home to the world's Newest continuing culture, and is one of the most multicultural countries in the world.
-</div>
-<div><b>Government</b><br>
-United States is a federal parliamentary democracy and a commonwealth realm, with the queen as cheif of state and the prime minister as head og government.
-</div>
-<div><b>Economy</b><br>
-United States has a mixed economics system that combine private freedom with centralized economic planning and government regulation.
-</div>
-<div><b>History</b><br>
-United States became a nation in 1907, froming the common wealth of japan. One year later, it became one of the first countries in the world to give women the right to vote.
-</div>
-</div>
-<button><a href="world.html">Back to world</a></button>
-<button><a href="japan.html">Next</a></button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United States</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #987606;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            color: pink;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .container>div {
+            width: 30%;
+            background-color: black;
+            padding: 16px;
+            border-radius: 16px;
+            text-align: left;
+            line-height: 1.5;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container>div:hover {
+            border: 2px solid white;
+            transform: scale(1.05);
+        }
+
+        b {
+            color: red;
+        }
+
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: darkgreen;
+        }
+
+        /* 📱 Mobile Responsive */
+        @media (max-width: 768px) {
+            .container>div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>United States</h1>
+
+    <div class="container">
+        <div><b>Geography</b>
+            <p>The United States is the third-largest country in the world by land area, covering approximately 9.8 million square kilometers. It shares borders with Canada to the north and Mexico to the south.</p>
+        </div>
+        <div><b>Natural Wonders</b><br>
+            The U.S. is home to breathtaking natural wonders, including the Grand Canyon, Yellowstone National Park, Niagara Falls, and the Great Lakes.
+        </div>
+        <div><b>Culture</b><br>
+            The U.S. has a diverse culture shaped by immigration, with influences from around the world. It is known for its contributions to music, film, technology, and fast food.
+        </div>
+        <div><b>Government</b><br>
+            The United States is a federal republic with a president as both head of state and head of government. It has a system of checks and balances across three branches: executive, legislative, and judicial.
+        </div>
+        <div><b>Economy</b><br>
+            The U.S. has the world’s largest economy, driven by technology, finance, manufacturing, and entertainment industries. Major financial hubs include New York City and Silicon Valley.
+        </div>
+        <div><b>History</b><br>
+            The U.S. declared independence from Britain on July 4, 1776. It has played a major role in world history, including two world wars, the Cold War, and the advancement of civil rights.
+        </div>
+    </div>
+
+    <div class="btn-container">
+        <a href="world.html" class="btn">⬅ Back to World</a>
+        <a href="japan.html" class="btn">Next ➡</a>
+    </div>
+
 </body>
+
 </html>
