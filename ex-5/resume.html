@@ -1,215 +1,146 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Aaron Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aaron C - Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #f8f9fa;
+        }
         .container {
-            width: 70%;
-            margin: auto;
-            border:2px solid black;
-        }
-
-        h2 {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        h4,
-        span {
-            color: red;
-        }
-
-        .header
-        {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .body {
-            display: flex;
-            /* justify-content: space-between; */
-            gap: 50px;
-        }
-        .dummy {
-            border-left: 1px solid black;
-            height: 500px;
-            margin-left: -50px;
-        }
-        li {
-            list-style-type: none;
-        }
-
-        table {
-            border: 5px solid #96D4D4;
-        }
-
-        th,
-        td {
-            border: 5px solid #96D4D4;
+            max-width: 900px;
+            background: #fff;
+            padding: 30px;
             border-radius: 10px;
-            padding: 10px 50px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
-        .wrapper {
-            width: 25%;
-            display: flex;
-            justify-content: space-between;
+        h2, h3 {
+            color: #343a40;
         }
-       
+        .text-primary {
+            font-weight: bold;
+        }
+        .section-title {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 0;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
     </style>
 </head>
-
 <body>
-    <div class="container">
+    <div class="container mt-4">
+        <header class="text-center mb-4">
+            <h2 class="fw-bold">Aaron C</h2>
+            <p class="text-muted">Web Developer</p>
+        </header>
+        
+        <section class="contact-info text-center mb-4">
+            <p><strong>Phone:</strong> 9840736652 | <strong>Email:</strong> aaronchrist2578@gmail.com</p>
+            <p><strong>Address:</strong> No:4384, 43rd Cross Street, Kannagi Nagar, Chennai-6000097</p>
+        </section>
 
-        <div class='header'>
-            <div>
-                <h2>Aaron C | Web Developer</h2>
-            </div>
-            <div>
-                <h4>9840736652 | aaronchrist2578@gmail.com</h4>
-                <p>No:4384,43rd Cross Street, Kannagi Nagar, Chennai-6000097</p>
-            </div>
-        </div>
-        <hr>
-        <h3>OBJECTIVE</h3>
-        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have an ability to showcase my talent and skills on the company to give an better and quick response on a
-            projetsI have an ability to showcase my talent and skills on the company to give an better and quick
-            response on a projetsI have an ability to showcase my talent and skills on the company to give an better and
-            quick response on a projetsI have an ability to showcase my talent and skills on the company to give an
-            better and quick response on a projetsI have an ability to showcase my talent and skills on the company to
-            give an better and quick response on a projets</p>
-        <hr>
-        <div class="body">
-            <div class="wrapper">
-                <div>
-                    <h3>SKILLS</h3>
+        <section>
+            <h3 class="section-title">Objective</h3>
+            <p>I aim to leverage my skills and knowledge to contribute effectively to a company's success, delivering efficient solutions and innovative web experiences.</p>
+        </section>
+        
+        <section>
+            <h3 class="section-title">Skills</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="text-primary">Technical Skills</h5>
                     <ul>
-                        <h4 style='color:red'>Soft Skills</h4>
-                        <li>HTML</li><br>
-                        <li>CSS</li><br>
-                        <li>JAVA SCRIPT</li><br>
-    
-                        <h4 style='color:red'>Hard Skills</h4>
-                        <li>TIME MANAGEMENT</li><br>
-                        <li>LEADERSHIP</li><br>
-                        <li>ADAPTABILITY</li><br>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Bootstrap, React</li>
+                        <li>PHP, MySQL</li>
                     </ul>
                 </div>
-                <div class="dummy"></div>
+                <div class="col-md-6">
+                    <h5 class="text-primary">Soft Skills</h5>
+                    <ul>
+                        <li>Time Management</li>
+                        <li>Leadership</li>
+                        <li>Adaptability</li>
+                    </ul>
+                </div>
             </div>
+        </section>
         
-            <div class="CERTIFICATE">
-                <h3>CERTIFICATE</h3>
-                <ul>
-                    <li style="list-style-type:circle;">
-                        <h4>Web Development</h4>
-                    </li>
-                    <p>Completed <span>Web Development</span> Course in Rinex Technology</p>
-                    <li style="list-style-type:circle;">
-                        <h4>Front-end Development</h4>
-                    </li>
-                    <p>Completed <span>Web Development</span> Course in JustRise Technology</p>
-                </ul>
-                <h3>INTERNSHIP</h3>
-                <ul>
-                    <li style="list-style-type:circle;">
-                        <h4>Web Development</h4>
-                    </li>
-                    <p>Worked as <span>Web Development Intern</span> in Rinex Technology</p>
-                    <li style="list-style-type:circle;">
-                        <h4>Web Development</h4>
-                    </li>
-                    <p>Worked as <span>Web Development Intern</span> in CodeAlpha</p>
-                    <li style="list-style-type:circle;">
-                        <h4>Front-end Development</h4>
-                    </li>
-                    <p>Worked as <span>Front-end Development Intern</span> in CodeAlpha</p>
-                </ul>
-            </div>
-        </div>
+        <section>
+            <h3 class="section-title">Certifications</h3>
+            <ul>
+                <li>Web Development - Rinex Technology</li>
+                <li>Front-end Development - JustRise Technology</li>
+            </ul>
+        </section>
 
-        <hr>
-        <div class='body'>
-            <div>
-                <table>
-                    <h3>EDUCATION
-                        <tr>
-                            <th>Course</th>
-                            <th>Institution</th>
-                            <th>Year</th>
-                            <th>Percentage</th>
-                        </tr>
-                        <tr>
-                            <td>M.Sc</td>
-                            <td>Govt.Arts College</td>
-                            <td>2023-2025</td>
-                            <td>80%</td>
-                        </tr>
-                        <tr>
-                            <td>B.Sc</td>
-                            <td>Mohamed Sathak College of Arts and Science</td>
-                            <td>2020-2023</td>
-                            <td>86%</td>
-                        </tr>
-                        <tr>
-                            <td>H.Sc</td>
-                            <td>Prof.s.a. Matriculation Hr.Sec School</td>
-                            <td>2019-2020</td>
-                            <td>56%</td>
-                        </tr>
-                        <tr>
-                            <td>SSLS</td>
-                            <td>Sri Sankara Matriculation School</td>
-                            <td>2017-2018</td>
-                            <td>86%</td>
-                        </tr>
-                </table>
-            </div>
-        </div>
-
-        <div class='body'>
-            <div>
-                <h3>PROJECTS</h3>
-                <ul>
-                    <li style="color:red;list-style-type:square;font-weight:900;">Department Forum</li>
-                    <li>
-                        <ul>
-                            <li>
-                                <p><span style="font-size:20px">Languages:</span> HTML,CSS,JAVASCRIPT,PHP,MYSQL</p>
-                            </li>
-                            <li>
-                                <p>Adding Result and Faculty Details on it</p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li style="color:red;list-style-type:square;font-weight:900;">Age Calculator</li>
-                    <li>
-                        <ul>
-                            <li>
-                                <p><span style="font-size:20px">Languages:</span> HTML,CSS,JAVASCRIPT</p>
-                            </li>
-                            <li>
-                                <p>User can find their age throught this portal</p>
-                            </li>
-                        </ul>
-                    </li>
-                    <li style="color:red;list-style-type:square;font-weight:900;">Sportify Eventz</li>
-                    <li>
-                        <ul>
-                            <li>
-                                <p><span style="font-size:20px">Languages:</span> HTML,CSS,JAVASCRIPT</p>
-                            </li>
-                            <li>
-                                <p>Online Academic Details and Joining to an Academic</p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
+        <section>
+            <h3 class="section-title">Internships</h3>
+            <ul>
+                <li>Web Development Intern - Rinex Technology</li>
+                <li>Web Development Intern - CodeAlpha</li>
+                <li>Front-end Development Intern - CodeAlpha</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h3 class="section-title">Education</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M.Sc</td>
+                        <td>Govt. Arts College</td>
+                        <td>2023-2025</td>
+                        <td>80%</td>
+                    </tr>
+                    <tr>
+                        <td>B.Sc</td>
+                        <td>Mohamed Sathak College of Arts and Science</td>
+                        <td>2020-2023</td>
+                        <td>86%</td>
+                    </tr>
+                    <tr>
+                        <td>H.Sc</td>
+                        <td>Prof. S.A. Matriculation Hr. Sec School</td>
+                        <td>2019-2020</td>
+                        <td>56%</td>
+                    </tr>
+                    <tr>
+                        <td>SSLC</td>
+                        <td>Sri Sankara Matriculation School</td>
+                        <td>2017-2018</td>
+                        <td>71%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h3 class="section-title">Projects</h3>
+            <ul>
+                <li><strong>Department Forum</strong> - HTML, CSS, JavaScript, PHP, MySQL</li>
+                <li><strong>Age Calculator</strong> - HTML, CSS, JavaScript</li>
+                <li><strong>Sportify Eventz</strong> - HTML, CSS, JavaScript</li>
+            </ul>
+        </section>
     </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

@@ -1,129 +1,161 @@
-<html >
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - Aaron C</title>
 
-<title>Biodata</title>
-<style>
+    <!-- Bootstrap CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet"
+    />
+
+    <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-            line-height: 1.6;
+            background-color: #f8f9fa;
         }
         .container {
             background: #fff;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            max-width: 800px;
-            margin: auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
         }
         h1, h2 {
-            color: #4CAF50;
+            color: #007BFF;
+            font-weight: bold;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+        .table th {
+            background: #007BFF;
+            color: white;
         }
-        table, th, td {
-            border: 1px solid #ddd;
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
         }
-        th, td {
-            padding: 10px;
-            text-align: left;
+        .contact a:hover {
+            text-decoration: underline;
         }
-        ul {
-            margin: 10px 0;
-            padding: 0 20px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-</style>
+    </style>
 </head>
 <body>
-<div class="container">
-		<center>
-<h1>Bio-Data</h1>
-		</center>
 
-<div class="section">
-<h2>Personal Information</h2>
-<p><strong>Full Name:</strong> Rama Moorthi M</p>
-<p><strong>Date of Birth:</strong> April 10, 1989</p>
-<p><strong>Gender:</strong> Male</p>
-<p><strong>Address:</strong> Chinnaya Garden, East Jones Road,Saidapet, Chennai</p>
-</div>
+    <div class="container">
+        <div class="text-center mb-4">
+            <h1>Biodata</h1>
+        </div>
 
+        <!-- Personal Information -->
+        <div class="mb-4">
+            <h2>Personal Information</h2>
+            <p><strong>Full Name:</strong> Aaron C</p>
+            <p><strong>Date of Birth:</strong> August 28, 2002</p>
+            <p><strong>Gender:</strong> Male</p>
+            <p><strong>Address:</strong> No:4384, 43rd Cross Street, Kannagi Nagar, Chennai-6000097</p>
+        </div>
 
-<div class="section">
-<h2>Educational Qualifications</h2>
-<table>
-<thead>
-<tr>
-<th>Degree</th>
-<th>Institution</th>
-<th>Year</th>
-<th>Percentage/CGPA</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>B.Sc. Computer Science</td>
-<td>GAC Nandanam</td>
-<td>2009-2012</td>
-<td>86/8.6</td>
-</tr>
-<tr>
-<td>High School</td>
-<td>Govt. Hr. Secondary School</td>
-<td>2008-2009</td>
-<td>85%</td>
-</tr>
-</tbody>
-</table>
-</div>
+        <!-- Education -->
+        <div class="mb-4">
+            <h2>Educational Qualifications</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Degree</th>
+                            <th>Institution</th>
+                            <th>Year</th>
+                            <th>Percentage/CGPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>M.Sc. Computer Science</td>
+                            <td>Govt Arts College</td>
+                            <td>2023-2025</td>
+                            <td>80%</td>
+                        </tr>
+                        <tr>
+                            <td>B.Sc. Computer Science</td>
+                            <td>Mohamed Sathak College of Arts and Science</td>
+                            <td>2020-2023</td>
+                            <td>86%</td>
+                        </tr>
+                        <tr>
+                            <td>Higher Secondary</td>
+                            <td>Prof.s.a.Matriculation Hr.Sec School</td>
+                            <td>2018-2020</td>
+                            <td>56%</td>
+                        </tr>
+                        <tr>
+                            <td>SSLC</td>
+                            <td>Sri Sankara Matriculation School</td>
+                            <td>2017-2018</td>
+                            <td>71%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
+        <!-- Skills -->
+        <div class="mb-4">
+            <h2>Skills</h2>
+            <ul class="list-group">
+                <li class="list-group-item">💻 Programming: Python, Java</li>
+                <li class="list-group-item">🌐 Web Development: HTML, CSS, JavaScript, React.js</li>
+                <li class="list-group-item">📊 Database: MySQL</li>
+                <li class="list-group-item">🛠️ Tools: Git, VS Code</li>
+            </ul>
+        </div>
 
-<div class="section">
-<h2>Skills</h2>
-<ul>
-<li>Programming Languages: Python, JavaScript, Java</li>
-<li>Web Development: HTML, CSS, React.js</li>
-<li>Database Management: MySQL, MongoDB</li>
-<li>Tools: Git, Docker, VS Code</li>
-</ul>
-</div>
+        <!-- Internship Experience -->
+        <div class="mb-4">
+            <h2>Internships</h2>
+            <ul class="list-group">
+                <strong>Web Developer - CodeAlpha</strong>
+                <li class="list-group-item">Developed Age Calculator using HTML, CSS, JS.</li>
+            </ul>
+            <ul class="list-group">
+                <strong>Web Developer - Rinex Technology</strong>
+                <li class="list-group-item">Developed projects using HTML, CSS, JS.</li>
+            </ul>
+        </div>
 
+        <!-- Projects Experience -->
+        <div class="mb-4">
+            <h2>Projects</h2>
+            <ul class="list-group">
+                
+                <li class="list-group-item">Department Forum</li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">Sportify Eventz</li>
+            </ul>
+        </div>
 
-<div class="section">
-<h2>Work Experience</h2>
-<p><strong>Software Developer</strong> Dell (2012-2024)</p>
-<ul>
-<li>Developed web applications using React.js and Node.js.</li>
-<li>Optimized database queries to improve system performance.</li>
-<li>Collaborated with cross-functional teams to deliver projects on time.</li>
-</ul>
-</div>
+        <!-- Hobbies -->
+        <div class="mb-4">
+            <h2>Hobbies and Interests</h2>
+            <ul class="list-group">
+                <li class="list-group-item">📸 Designing</li>
+                <li class="list-group-item">♟️ Playing chess</li>
+                <li class="list-group-item">💻 Developing</li>
+            </ul>
+        </div>
 
+        <!-- Contact Info -->
+        <div class="mb-4">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:aaronc2578@gmail.com" class="contact">aaronc2578@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919840736652" class="contact">+91 9840736652</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/aaron-dev/" target="_blank" class="contact">linkedin.com/in/aaron-dev/</a></p>
+        </div>
+    </div>
 
-<div class="section">
-<h2>Hobbies and Interests</h2>
-<ul>
-<li>Reading tech blogs and articles</li>
-<li>Traveling and exploring new places</li>
-<li>Photography</li>
-<li>Playing chess</li>
-</ul>
-</div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-
-<div class="section">
-<h2>Contact Information</h2>
-<p><strong>Email:</strong> ramarao@gmail.com</p>
-<p><strong>Phone:</strong> +91 9585161234</p>
-<p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/ramrao" target="_blank">linkedin.com/in/ramarao</a></p>
-</div>
-</div>
 </body>
 </html>
