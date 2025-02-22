@@ -1,7 +1,7 @@
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/World_map_-_low_resolution.svg/1920px-World_map_-_low_resolution.svg.png'); /* World Map */
+  background-image: url('./World_map.png'); /* World Map */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
