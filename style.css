@@ -44,20 +44,22 @@
     gap: 40px;
 }
 @media (max-width: 768px) {
-  .bg-container {
-    height: 60vh; /* Reduce height on smaller screens */
+  .body {
+    height: 100vh; /* Reduce height on smaller screens */
     background-size: cover; /* Ensure proper scaling */
     background-position: center; /* Keep focus on center */
     padding: 10px;
+    overflow: hidden;
   }
 }
 
 /* 📱 Small Mobile Screens (less than 480px) */
 @media (max-width: 480px) {
-  .bg-container {
-    height: 50vh; /* Smaller height */
+  .body {
+    height: 100vh; /* Smaller height */
     background-size: contain; /* Ensure full image is visible */
     padding: 5px;
+    overflow: hidden;
   }
 }
 @media (max-width: 600px) {
