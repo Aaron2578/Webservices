@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ?>
 
             <div class="text-center mt-4">
-                <a href="index.php" class="btn btn-primary">Try Again</a>
+                <a href="index.html" class="btn btn-primary">Try Again</a>
             </div>
         </div>
     </div>
