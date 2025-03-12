@@ -1,117 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
-    <link rel="stylesheet" href="../bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <title>Government Arts College for Men (Autonomous), Nandanam, Chennai</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        .table-container {
+            margin-top: 20px;
+        }
+        #departments {
+            background: linear-gradient(to right, #f0f8ff, #e6f0fa);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        #library {
+            background: linear-gradient(to right, #f0f8ff, #e6f0fa);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="header text-center">
-        <h1>Government Arts College</h1>
-        <h5>Nandhanam, Chennai</h5>
-    </div>
-   <div class="container">
-    <div class="nav d-flex justify-content-between">
-        <li><button class="btn btn-danger"><a href="#">Home</a></button></li>
-        <li><button class="btn btn-danger"><a href="#department">Department</a></button></li>
-        <li><button class="btn btn-danger"><a href="#fees">Fees</a></button></li>
-        <li><button class="btn btn-danger"><a href="#about">About</a></button></li>
-        <li><button class="btn btn-danger"><a href="#contact">Contact</a></button></li>
-    </div>
-    <div class="content">
-        <marquee><span class="running-text">Admission Open for 2025-2026 </span><button class="btn btn-success"><a>Click Here !</a></button></marquee>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus ullam modi vitae illum praesentium! Ullam harum, asperiores laboriosam doloremque aliquid culpa ipsa mollitia excepturi sed debitis obcaecati. Quibusdam numquam ad, repellat voluptatibus quas, accusantium sapiente velit, non veniam saepe quisquam magnam aliquid voluptas quasi aut dolorum rerum porro suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, numquam quae cupiditate, non sunt fugit optio aliquid nihil nostrum autem hic cum, molestiae esse. Culpa inventore commodi consectetur eaque dolore blanditiis sunt illo ullam, asperiores id quis velit voluptates voluptatum. Aliquam, asperiores totam. Id, porro, alias sed repudiandae quibusdam molestias totam at laudantium delectus sit labore nesciunt laborum itaque ea dignissimos debitis eius nemo asperiores minus. Ipsum praesentium maiores ullam. Eum qui veniam tempore odio doloremque sit officiis, fuga nemo, obcaecati iure ex laudantium molestiae laborum corrupti distinctio dignissimos eveniet dolor, inventore commodi maiores vel quas? Amet placeat praesentium corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat natus rerum asperiores impedit. Magni dignissimos provident voluptas odit ab ad nam! Omnis alias iure facere culpa molestiae obcaecati magni dolore reprehenderit vero a quod, soluta natus labore odio, placeat, ad doloribus nulla explicabo fugiat. Adipisci odio numquam magni doloribus sit neque corporis repellat laboriosam atque omnis. Tenetur amet, soluta quasi facere minima facilis dolor deserunt quidem incidunt animi tempore, molestias adipisci repudiandae, dicta iure ut aut temporibus fugiat et fugit illum cumque! Obcaecati id totam illo beatae, molestiae maiores iusto cum eaque quod natus, tenetur debitis dolorum quibusdam expedita autem nisi odit quis magni fugiat voluptatem, ea ducimus possimus. Hic earum totam quae facere amet eligendi! Velit asperiores suscipit, cumque eligendi officia deserunt! Placeat nulla nihil totam aspernatur voluptate cupiditate rem recusandae voluptatem officia quis deleniti qui expedita, optio, maxime laudantium maiores enim dolorem molestias. Error quidem cum, nam odio illum ducimus tempore magnam repellat cumque quas laboriosam natus obcaecati nulla quae quasi corporis quia impedit, voluptatem culpa. Non ex ut quod maxime. Eum odio accusantium sunt totam recusandae, inventore neque tempora vero itaque nihil quam eligendi reiciendis quia ab blanditiis omnis nemo deleniti voluptatem! Perferendis error veniam optio natus animi. Sit nulla dolor quia vel laudantium sapiente. Aut eveniet, adipisci ad hic, nemo magnam veniam illo eius quia culpa distinctio corporis impedit beatae voluptas tempora doloribus dolorem molestiae quasi. Sint nobis assumenda rerum ea necessitatibus itaque temporibus exercitationem! Itaque, ipsa. Vitae consectetur nobis odit modi distinctio? Beatae minus facilis eum exercitationem odio at fuga perspiciatis mollitia? Omnis laudantium harum possimus a temporibus fuga maiores eveniet quas. Eum illo quam dolor laborum, non perferendis amet? Necessitatibus corporis natus nobis placeat voluptas magnam error, tempore dolor explicabo doloremque? Soluta, assumenda tenetur, non veniam sed facere quas ipsa autem dicta doloremque id.</p>
-    </div>
-    <div class="content" id="department">
-        <h2>Departments</h2>
+    <!-- Header -->
+    <div class="header bg-dark text-white text-center py-3 d-flex align-items-center justify-content-center">
+        <img src="../images/g.jpeg" alt="College Logo" class="me-3" style="width: 80px; height: auto;">
         <div>
-            <ol class="d-flex justify-content-between">
-              <li><button class="btn btn-primary">Tamil</button></li>
-              <li><button class="btn btn-primary">English</button></li>
-              <li><button class="btn btn-primary">Economics</button></li>
-              <li><button class="btn btn-primary">History</button></li>
-              <li><button class="btn btn-primary">Mathematics</button></li>
-              <li><button class="btn btn-primary">Physics</button></li>
-              <li><button class="btn btn-primary">Chemistry</button></li>
-              <li><button class="btn btn-primary">Botany</button></li>
-              <li><button class="btn btn-primary">Zology</button></li>
-              <li><button class="btn btn-primary">Computer Science</button></li>
-            </ol>
-          </div>
+            <h1 class="mb-0">Government Arts College(Autonomous) </h1>
+            <h6 class="mb-0">(affiliated with University of Madras)</h6>
+            <h5 class="mb-0">Nandanam, Chennai</h5>
+        </div>
+        <img src="../images/c.jpeg" alt="College Logo" class="ms-3" style="width: 80px; height: auto;">
     </div>
-    <div id="fees" class="content">
-        <h2 class="mt-3">Course Fees Structure</h2>
-        <div class="container table-container">
-            <div class="table-responsive">
-                <table class="table table-dark table-striped table-bordered text-center">
-                    <thead class="table-success">
-                        <tr>
-                            <th>Course Id</th>
-                            <th>Course</th>
-                            <th>Fee</th>
-                            <th>Years</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>101</td><td>B.A Tamil</td><td>Rs.1200</td><td>3</td></tr>
-                        <tr><td>102</td><td>B.A English</td><td>Rs.1300</td><td>3</td></tr>
-                        <tr><td>103</td><td>B.Sc Mathematics</td><td>Rs.1500</td><td>3</td></tr>
-                        <tr><td>104</td><td>B.Sc Physics</td><td>Rs.1700</td><td>3</td></tr>
-                        <tr><td>105</td><td>B.Sc Chemistry</td><td>Rs.1800</td><td>3</td></tr>
-                        <tr><td>106</td><td>B.Sc Botany</td><td>Rs.1600</td><td>3</td></tr>
-                        <tr><td>107</td><td>B.Sc Zology</td><td>Rs.1500</td><td>3</td></tr>
-                        <tr><td>108</td><td>B.A History</td><td>Rs.1100</td><td>3</td></tr>
-                        <tr><td>109</td><td>B.Com General</td><td>Rs.1100</td><td>3</td></tr>
-                        <tr><td>110</td><td>B.Sc Computer Science</td><td>Rs.1500</td><td>3</td></tr>
-                    </tbody>
-                </table>
+
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GAC Nandanam</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#departments">Departments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./library.html">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <div class="content" id="about">
+            <h2>About the College</h2>
+            <p>
+                Government Arts College, Nandanam, Chennai:600 035, originated in the mid-18th century as a school
+                called Madrasa. In 1901, it was upgraded to a college with the objective of accommodating Muslim
+                students. This continued until it acquired its present status in 1948.
+            </p>
+            <p>
+                The college is affiliated with the University of Madras and offers various undergraduate and
+                postgraduate courses in arts, commerce, and science streams. It has been recognized by the University
+                Grants Commission (UGC) and has a rich history of academic excellence.
+            </p>
+        </div>
+
+        <!-- Departments Section -->
+        <div class="content" id="departments">
+            <h2>Departments</h2>
+            <ul>
+                <li>Tamil</li>
+                <li>English</li>
+                <li>Historical Studies</li>
+                <li>Economics</li>
+                <li>Commerce</li>
+                <li>Commerce (Corporate Secretaryship)</li>
+                <li>Business Administration (B.B.A)</li>
+                <li>Mathematics</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Botany</li>
+                <li>Zoology and Aquaculture</li>
+                <li>Computer Science</li>
+                <li>Hindi</li>
+                <li>Public Administration</li>
+                <li>Statistics</li>
+                <li>Library</li>
+            </ul>
+        </div>
+
+        <!-- Courses Section -->
+        <div class="content" id="courses">
+            <h2>Courses Offered</h2>
+            <h3>Undergraduate Programs</h3>
+            <div class="table-container">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Course</th>
+                                <th>Department</th>
+                                <th>Medium</th>
+                                <th>Sanctioned Strength</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>B.A</td>
+                                <td>Tamil Literature</td>
+                                <td>Tamil</td>
+                                <td>80</td>
+                            </tr>
+                            <tr>
+                                <td>B.A</td>
+                                <td>English Literature</td>
+                                <td>English</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>B.A</td>
+                                <td>Historical Studies</td>
+                                <td>English</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>B.A</td>
+                                <td>Historical Studies</td>
+                                <td>Tamil</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>B.A</td>
+                                <td>Economics</td>
+                                <td>English</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>B.A</td>
+                                <td>Economics</td>
+                                <td>Tamil</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>B.Com</td>
+                                <td>General</td>
+                                <td>English</td>
+                                <td>100 (Shift 1)</td>
+                            </tr>
+                            <tr>
+                                <td>B.Com</td>
+                                <td>General</td>
+                                <td>English</td>
+                                <td>50 (Shift 2)</td>
+                            </tr>
+                            <tr>
+                                <td>B.Com</td>
+                                <td>Corporate Secretaryship</td>
+                                <td>English</td>
+                                <td>40 (Shift 1)</td>
+                            </tr>
+                            <tr>
+                                <td>B.Com</td>
+                                <td>Corporate Secretaryship</td>
+                                <td>English</td>
+                                <td>40 (Shift 2)</td>
+                            </tr>
+                            <tr>
+                                <td>B.B.A</td>
+                                <td>Human Resource Development</td>
+                                <td>English</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>B.Sc</td>
+                                <td>Mathematics</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+
+                            <tr>
+                                <td>B.Sc</td>
+                                <td>Physics</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>B.Sc</td>
+                                <td>Chemistry</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>B.Sc</td>
+                                <td>Botany</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>B.Sc</td>
+                                <td>Zoology</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>B.Sc</td>
+                                <td>Computer Science</td>
+                                <td>English</td>
+                                <td>40</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Postgraduate Programs Section -->
+        <div class="content" id="pg-courses">
+            <h3>Postgraduate Programs</h3>
+            <div class="table-container">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered text-center">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Course</th>
+                                <th>Department</th>
+                                <th>Medium</th>
+                                <th>Sanctioned Strength</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>M.A</td>
+                                <td>Economics</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>M.A</td>
+                                <td>Historical Studies</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>M.A</td>
+                                <td>Public Administration</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>M.Com</td>
+                                <td>General</td>
+                                <td>English</td>
+                                <td>40</td>
+                            </tr>
+                            <tr>
+                                <td>M.Sc</td>
+                                <td>Mathematics</td>
+                                <td>English</td>
+                                <td>30</td>
+                            </tr>
+                            <tr>
+                                <td>M.Sc</td>
+                                <td>Physics</td>
+                                <td>English</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>M.Sc</td>
+                                <td>Chemistry</td>
+                                <td>English</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>M.Sc</td>
+                                <td>Botany</td>
+                                <td>English</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>M.Sc</td>
+                                <td>Zoology</td>
+                                <td>English</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>M.Sc</td>
+                                <td>Computer Science</td>
+                                <td>English</td>
+                                <td>25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    <!-- Library Section -->
+<div class="content" id="library">
+    <h2>Library</h2>
+    <p class="text-center">
+        The Government Arts College Library is a hub of knowledge, offering a vast collection of books, research journals, and digital resources.
+    </p>
+
+    <!-- Library Resources in Box View -->
+    <div class="row text-center">
+        <div class="col-md-4 mb-3">
+            <div class="p-3 border rounded bg-light">
+                <h5>📚 Books Collection</h5>
+                <p>Over 50,000 books across multiple disciplines.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="p-3 border rounded bg-light">
+                <h5>📖 Research Journals</h5>
+                <p>Access to national and international academic journals.</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="p-3 border rounded bg-light">
+                <h5>💻 Digital Library</h5>
+                <p>Online access to e-books, research papers, and resources.</p>
             </div>
         </div>
     </div>
-    <div class="content" id="about">
-        <h2>About the College</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ducimus ullam modi vitae illum praesentium! Ullam harum, asperiores laboriosam doloremque aliquid culpa ipsa mollitia excepturi sed debitis obcaecati. Quibusdam numquam ad, repellat voluptatibus quas, accusantium sapiente velit, non veniam saepe quisquam magnam aliquid voluptas quasi aut dolorum rerum porro suscipit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, numquam quae cupiditate, non sunt fugit optio aliquid nihil nostrum autem hic cum, molestiae esse. Culpa inventore commodi consectetur eaque dolore blanditiis sunt illo ullam, asperiores id quis velit voluptates voluptatum. Aliquam, asperiores totam. Id, porro, alias sed repudiandae quibusdam molestias totam at laudantium delectus sit labore nesciunt laborum itaque ea dignissimos debitis eius nemo asperiores minus. Ipsum praesentium maiores ullam. Eum qui veniam tempore odio doloremque sit officiis, fuga nemo, obcaecati iure ex laudantium molestiae laborum corrupti distinctio dignissimos eveniet dolor, inventore commodi maiores vel quas? Amet placeat praesentium corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat natus rerum asperiores impedit. Magni dignissimos provident voluptas odit ab ad nam! Omnis alias iure facere culpa molestiae obcaecati magni dolore reprehenderit vero a quod, soluta natus labore odio, placeat, ad doloribus nulla explicabo fugiat. Adipisci odio numquam magni doloribus sit neque corporis repellat laboriosam atque omnis. Tenetur amet, soluta quasi facere minima facilis dolor deserunt quidem incidunt animi tempore, molestias adipisci repudiandae, dicta iure ut aut temporibus fugiat et fugit illum cumque! Obcaecati id totam illo beatae, molestiae maiores iusto cum eaque quod natus, tenetur debitis dolorum quibusdam expedita autem nisi odit quis magni fugiat voluptatem, ea ducimus possimus. Hic earum totam quae facere amet eligendi! Velit asperiores suscipit, cumque eligendi officia deserunt! Placeat nulla nihil totam aspernatur voluptate cupiditate rem recusandae voluptatem officia quis deleniti qui expedita, optio, maxime laudantium maiores enim dolorem molestias. Error quidem cum, nam odio illum ducimus tempore magnam repellat cumque quas laboriosam natus obcaecati nulla quae quasi corporis quia impedit, voluptatem culpa. Non ex ut quod maxime. Eum odio accusantium sunt totam recusandae, inventore neque tempora vero itaque nihil quam eligendi reiciendis quia ab blanditiis omnis nemo deleniti voluptatem! Perferendis error veniam optio natus animi. Sit nulla dolor quia vel laudantium sapiente. Aut eveniet, adipisci ad hic, nemo magnam veniam illo eius quia culpa distinctio corporis impedit beatae voluptas tempora doloribus dolorem molestiae quasi. Sint nobis assumenda rerum ea necessitatibus itaque temporibus exercitationem! Itaque, ipsa. Vitae consectetur nobis odit modi distinctio? Beatae minus facilis eum exercitationem odio at fuga perspiciatis mollitia? Omnis laudantium harum possimus a temporibus fuga maiores eveniet quas. Eum illo quam dolor laborum, non perferendis amet? Necessitatibus corporis natus nobis placeat voluptas magnam error, tempore dolor explicabo doloremque? Soluta, assumenda tenetur, non veniam sed facere quas ipsa autem dicta doloremque id.</p>
-    </div>
-    <div id="contact" class="content">
-        <h2>Contact Form</h2>
-        <div class="container">
 
-            
-            <form action="validate.php" method="post">
-    
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
-                </div>
-    
-                <div class="mb-3">
-                    <label for="city" class="form-label">City:</label>
-                    <input type="text" id="city" name="city" class="form-control" placeholder="Enter your city">
-                </div>
-    
-                <div class="mb-3">
-                    <label for="pincode" class="form-label">Pin Code:</label>
-                    <input type="text" id="pincode" name="pincode" class="form-control" placeholder="Enter 6-digit Pin Code" pattern="[0-9]{6}" title="Enter a valid 6-digit pin code">
-                </div>
-    
-                <div class="mb-3">
-                    <label for="phone" class="form-label">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter 10-digit phone number" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number" required>
-                </div>
-    
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email Address:</label>
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-                </div>
-    
-                <button type="submit" class="btn btn-primary">Submit</button>
-    
-            </form>
+    <!-- Library Services in Table View -->
+    <h3 class="mt-4">Library Services</h3>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>📖 Book Lending</td>
+                    <td>Students can borrow books for academic use.</td>
+                </tr>
+                <tr>
+                    <td>🔍 Reference & Research</td>
+                    <td>Guidance for research and academic projects.</td>
+                </tr>
+                <tr>
+                    <td>📂 Digital Resources</td>
+                    <td>Access to online books, journals, and databases.</td>
+                </tr>
+                <tr>
+                    <td>🖨️ Photocopy & Printing</td>
+                    <td>Printing and photocopying services available.</td>
+                </tr>
+                <tr>
+                    <td>🔎 Online Catalog</td>
+                    <td>Search for books and resources online.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Library Timings in Box View -->
+    <h3 class="mt-4">Library Timings</h3>
+    <div class="row text-center">
+        <div class="col-md-4 mb-3">
+            <div class="p-3 border rounded bg-light">
+                <h5>🕘 Monday - Friday</h5>
+                <p>9:00 AM - 5:00 PM</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="p-3 border rounded bg-light">
+                <h5>🕘 Saturday</h5>
+                <p>9:00 AM - 1:00 PM</p>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="p-3 border rounded bg-danger text-white">
+                <h5>🚫 Sunday</h5>
+                <p>Closed</p>
+            </div>
         </div>
     </div>
 
-   </div>
+    <!-- Library Contact -->
+    <h3 class="mt-4">Contact</h3>
+    <p><strong>Library In-Charge:</strong> Dr. G. Kothdaraman</p>
+    <p><strong>Email:</strong> library@gacnandanam.com</p>
+    <p><strong>Phone:</strong> +91 44 9876 5432</p>
+</div>
+
+
+        <!-- Contact Section -->
+        <div class="content" id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> Government Arts College(Autonomous), Nandanam, Chennai - 600035</p>
+            <p><strong>Email:</strong> info@gacnandanam.com</p>
+            <p><strong>Phone:</strong> +91 44 1234 5678</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer text-center">
+            <p>&copy; 2025 Government Arts College(Autonomous), Nandanam, Chennai. All rights reserved.</p>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
